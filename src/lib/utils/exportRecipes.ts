@@ -4,7 +4,10 @@ export function formatIngredient(i: Ingredient): string {
     return [i.amount, i.unit, i.name].filter((part) => part !== "").join(" ");
 }
 
+//putting export local storage recipes into a text file 
 export function exportRecipes(recipes: Recipe[]): string {
+    
+
     return recipes.map((r) => {
         const ingredients = r.ingredients.map((i) => `- ${formatIngredient(i)}`).join("\n");
         const steps = r.instructions.map((step, n) => `${n + 1}. ${step}`).join("\n");

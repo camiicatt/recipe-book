@@ -189,7 +189,6 @@
         cursor: pointer;
     }
 
-    /* let us style the open menu too (Chrome/Edge); other browsers keep their native menu */
     @supports (appearance: base-select) {
         select,
         select::picker(select) {

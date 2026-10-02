@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SaveButton from "$lib/components/SaveButton.svelte";
 	import Notice from "$lib/components/Notice.svelte";
+	import "../app.css";
 
 	let { children } = $props();
 </script>

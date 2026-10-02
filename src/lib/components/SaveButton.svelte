@@ -18,7 +18,7 @@
 <style>
     .save-button {
         position: fixed;
-        z-index: 100;               /* keeps it in front of the book */
+        z-index: 100;               
         bottom: 1rem;
         right: 1rem;
         padding: 0.6rem 1.2rem;

@@ -51,7 +51,9 @@
         box-shadow: 0 25px 40px rgba(0, 0, 0, 0.65);
     }
     .page {
-        flex: 1;
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        min-width: 0;
         padding: 2.25rem 2.5rem;
         overflow-y: auto;
         background-color: var(--paper);

@@ -1,0 +1,14 @@
+/* Food pattern behind the book. Lives in a plain .css file (not inside a component's <style>),
+   and uses the $lib alias so Vite resolves the image paths and adds the deploy base path. */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;                 /* behind the book */
+    pointer-events: none;        /* clicks pass through */
+    opacity: 0.35;               /* soft enough that the book stays the focus */
+    background-image: url("$lib/img/1.png"), url("$lib/img/2.png"), url("$lib/img/3.png");
+    background-size: 480px;
+    background-position: 0 0, 160px 120px, 320px 240px;   /* offsets stop them landing on each other */
+    background-repeat: repeat;
+}

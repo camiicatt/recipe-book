@@ -16,7 +16,7 @@
         top: 1.25rem;
         left: 0;
         right: 0;
-        margin: 0 auto;              /* centers it without using transform, which the slide-in needs */
+        margin: 0 auto;              
         width: fit-content;
         max-width: min(90vw, 28rem);
         z-index: 200;
@@ -27,7 +27,7 @@
         background-color: var(--paper);
         background-image: var(--grain);
         border: 1.5px solid var(--ink-soft);
-        border-left: 6px solid var(--accent);    /* like a bookmark ribbon on the note */
+        border-left: 6px solid var(--accent);    
         border-radius: 3px;
         box-shadow: 0 8px 20px rgba(30, 20, 5, 0.4);
         font-family: var(--font-hand);
